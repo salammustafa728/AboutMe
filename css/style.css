@@ -39,3 +39,11 @@ footer{
 footer a{
     padding: 5px;
 }
+section ul li{
+    font-weight: 700;
+    color: #06899b;
+}
+main ul{
+    font-weight: 700;
+    color: #06899b;
+}
