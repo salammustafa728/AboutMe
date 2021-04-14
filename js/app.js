@@ -13,7 +13,12 @@ let question = prompt('Now you should answer these question about me,\n Are you 
 
 alert('Great, Lets start :) ');
 
-let ques1 = prompt('Did I study in Al-hussien Bin Talal university? Yes/No').toLowerCase();
+
+
+function funcStudy(ques1)
+{
+
+ques1 = prompt('Did I study in Al-hussien Bin Talal university? Yes/No').toLowerCase();
 //console.log(ques1);
 alert('your answer is: '+ques1);
 
@@ -25,8 +30,17 @@ if(ques1 === 'yes'){
   scoreCount = scoreCount - 1;
   alert('ohhh, Unfortunately, incrroct answer');
 }
+}
 
-let ques2 = prompt('Did I studied computer science? Yes/No').toLowerCase();
+let ques1;
+funcStudy(ques1);
+
+
+
+
+function funcMajour(ques2)
+{
+ques2 = prompt('Did I studied computer science? Yes/No').toLowerCase();
 //   console.log('your answer is: '+ ques2);
 alert('your answer is: '+ques2);
 
@@ -38,8 +52,15 @@ if(ques2 === 'yes'){
   alert('ohhh, Unfortunately, incrroct answer');
   scoreCount = scoreCount - 1;
 }
+}
+let ques2;
+funcMajour(ques2);
 
-let ques3 = prompt('Do I have an experience in programming? Yes/No').toLowerCase();
+
+
+function funcExperience(ques3)
+{
+ques3 = prompt('Do I have an experience in programming? Yes/No').toLowerCase();
 // console.log('your answer is: '+ ques3);
 alert('your answer is: '+ ques3);
 if(ques3 === 'no'){
@@ -50,8 +71,14 @@ if(ques3 === 'no'){
   scoreCount = scoreCount - 1;
   alert('ohhh, Unfortunately, incrroct answer');
 }
+}
+let ques3;
+funcExperience(ques3);
 
-let ques4 = prompt('Am I 24 years old? Yes/No').toLowerCase();
+
+function funcAge(ques4){
+
+ ques4 = prompt('Am I 24 years old? Yes/No').toLowerCase();
 //console.log('your answer is: '+ ques4 );
 alert('your answer is: '+ ques4 );
 if(ques4 === 'yes'){
@@ -62,8 +89,13 @@ if(ques4 === 'yes'){
   scoreCount = scoreCount - 1;
   alert('ohhh, Unfortunately, incrroct answer');
 }
+}
+let ques4;
+funcAge(ques4);
 
-let ques5 = prompt('Am I a trainee for ASAC? Yes/No').toLowerCase();
+function funcTrain(ques5)
+{
+ques5 = prompt('Am I a trainee for ASAC? Yes/No').toLowerCase();
 //console.log('your answer is: '+ques5);
 alert('your answer is: '+ ques5 );
 if(ques5 === 'yes'){
@@ -74,6 +106,10 @@ if(ques5 === 'yes'){
   scoreCount = scoreCount - 1;
   alert('ohhh, Unfortunately, incrroct answer');
 }
+}
+let ques5;
+funcTrain(ques5);
+
 
 alert('Thank you '+userName +' for answering the guessing game questions \n Have a nice day :)');
 
