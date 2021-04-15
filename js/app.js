@@ -58,7 +58,7 @@ funcStudy(ques1);
 
 function funcMajour(ques2)
 {
-  ques2 = prompt('Did I studied computer science? Yes/No').toLowerCase();
+  ques2 = prompt('Did I study computer science? Yes/No').toLowerCase();
   //   console.log('your answer is: '+ ques2);
   alert('your answer is: '+ques2);
 
@@ -211,34 +211,34 @@ function guessNumber(){
 }
 
 guessNumber();
+alert('Thanks for you '+ userName +' the correct answer is 5  ');
 
-let guessArray = ['turkey','canada','spain','italy'];
-let userGuessCon = prompt('Hello, Now you should guess one of these countries from these list, \n Please enter one of these list, one is correct \n turkey,italy,spain,canada ').toLowerCase();
+let guessArray = ['canada','greece','italy','spain','turkey'];
+// let userGuessCon = prompt('Hello, Now you should guess one of these countries \n two of them are correct from these list, \n Please enter one of these list, one is correct \n turkey, italy, spain, canada, greece ').toLowerCase();
 function guessCountry(){
-  for(let i = 0; i <= guessArray.length; i++){
-    console.log(i);
-    if(userGuessCon === guessArray[1]){
+  let c = 0;
+  while (c<6){
+    let userGuessCon = prompt('Please enter one of these list,\n two of these countries are correct try to guess \n turkey, italy, spain, canada, greece');
+    if(userGuessCon === guessArray[0] || userGuessCon === guessArray[4]){
+      alert('Great, Your answer is correct');
+      scoreCount++;
       break;
-    }else{
-      prompt('Please enter one of these list, one of these countries are correct try t guess \n turkey,italy,spain,canada ');
     }
+    c++;
   }
 }
 
 guessCountry();
-// eslint-disable-next-line no-undef
-if(userGuessCon === guessArray[1]){
-  // eslint-disable-next-line no-undef
-  console.log(userGuessCon);
-  alert('Great, Your answer is correct');
-}else{
-  alert('oh,Thanks for you '+ userName +' the correct answer is canada');
-}
+
+alert('Thanks for you '+ userName +' the correct answer is canada or turkey  ');
+
+
+
 
 
 if(scoreCount >5 ){
   console.log(scoreCount);
-  alert('Your score is '+scoreCount+ ' /7 ,Great your answer is almost right'+ 'Thank you '+userName);
+  alert('Your score is '+scoreCount+ ' /7 ,Great your answer is almost right'+ ' Thank you '+userName);
 }else{
   alert('oh, your score is ' + scoreCount+'/7 , Thank you for answering these question:) ' );
 
