@@ -5,10 +5,8 @@ alert('Hello to Salam Mustafa page');
 let scoreCount = 7;
 
 let userName = prompt('Enter your name please').toLowerCase();
-//console.log('your name is: '+userName);
 alert('Hello '+ userName);
 
-// eslint-disable-next-line no-unused-vars
 let question = prompt('Now you should answer these question about me,\n Are you ready?y/n').toLowerCase();
 if(question === 'yes' || question === 'y'){
   alert('Great, Lets start :) ');
@@ -27,13 +25,11 @@ function funcStudy(ques1)
 {
 
   ques1 = prompt('Did I study in Al-hussien Bin Talal university? Yes/No').toLowerCase();
-  //console.log(ques1);
   alert('your answer is: '+ques1);
 
   if(ques1 === 'yes' || ques1 === 'y'){
     scoreCount = scoreCount + 0;
     alert('Great, Your answer is correct ');
-  //console.log('Great, Your answer is correct');
   }else if(ques1==='no' || ques1 ==='n'){
     scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
@@ -42,7 +38,6 @@ function funcStudy(ques1)
     if(ques1 === 'yes' || ques1 === 'y'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
-    //console.log('Great, Your answer is correct');
     }else if(ques1==='no' || ques1 ==='n'){
       scoreCount = scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
@@ -59,13 +54,11 @@ funcStudy(ques1);
 function funcMajour(ques2)
 {
   ques2 = prompt('Did I study computer science? Yes/No').toLowerCase();
-  //   console.log('your answer is: '+ ques2);
   alert('your answer is: '+ques2);
 
   if(ques2 === 'yes' || ques2 === 'y'){
     scoreCount = scoreCount + 0;
     alert('Great, Your answer is correct ');
-  //console.log('Great, Your answer is correct');
   }else if(ques2==='no' || ques2 === 'n'){
     alert('ohhh, Unfortunately, incrroct answer');
     scoreCount = scoreCount - 1;
@@ -74,7 +67,6 @@ function funcMajour(ques2)
     if(ques2 === 'yes' || ques2 === 'y'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
-    //console.log('Great, Your answer is correct');
     }else if(ques2==='no' || ques2 === 'n'){
       alert('ohhh, Unfortunately, incrroct answer');
       scoreCount = scoreCount - 1;
@@ -89,12 +81,10 @@ funcMajour(ques2);
 function funcExperience(ques3)
 {
   ques3 = prompt('Do I have an experience in programming? Yes/No').toLowerCase();
-  // console.log('your answer is: '+ ques3);
   alert('your answer is: '+ ques3);
   if(ques3 === 'no' || ques3 === 'n'){
     scoreCount = scoreCount + 0;
     alert('Great, Your answer is correct ');
-  //console.log('Great, Your answer is correct');
   }else if(ques3 === 'yes'|| ques3 === 'y'){
     scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
@@ -103,7 +93,6 @@ function funcExperience(ques3)
     if(ques3 === 'no' || ques3 === 'n'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
-    //console.log('Great, Your answer is correct');
     }else if(ques3 === 'yes'|| ques3 === 'y'){
       scoreCount = scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
@@ -117,12 +106,10 @@ funcExperience(ques3);
 function funcAge(ques4){
 
   ques4 = prompt('Am I 24 years old? Yes/No').toLowerCase();
-  //console.log('your answer is: '+ ques4 );
   alert('your answer is: '+ ques4 );
   if(ques4 === 'yes' || ques4 === 'y'){
     scoreCount = scoreCount + 0;
     alert('Great, Your answer is correct ');
-  //console.log('Great, Your answer is correct');
   }else if(ques4 === 'no' || ques4 === 'n' ){
     scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
@@ -131,7 +118,6 @@ function funcAge(ques4){
     if(ques4 === 'yes' || ques4 === 'y'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
-    //console.log('Great, Your answer is correct');
     }else if(ques4 === 'no' || ques4 === 'n' ){
       scoreCount = scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
@@ -144,12 +130,10 @@ funcAge(ques4);
 function funcTrain(ques5)
 {
   ques5 = prompt('Am I a trainee for ASAC? Yes/No').toLowerCase();
-  //console.log('your answer is: '+ques5);
   alert('your answer is: '+ ques5 );
   if(ques5 === 'yes' || ques5 === 'y'){
     scoreCount = scoreCount + 0;
     alert('Great, Your answer is correct ');
-  //console.log('Great, Your answer is correct');
   }else if(ques5 === 'no' || ques5 === 'n'){
     scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
@@ -158,7 +142,6 @@ function funcTrain(ques5)
     if(ques5 === 'yes' || ques5 === 'y'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
-    //console.log('Great, Your answer is correct');
     }else if(ques5 === 'no' || ques5 === 'n'){
       scoreCount = scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
@@ -176,7 +159,6 @@ alert('Thank you '+userName +' for answering the guessing game questions \n Have
 
 
 let guessingNum ='5';
-//code to give the user 4 opertunity to gusee the number
 function guessNumber(){
   let userGuess = prompt('Hello to guessing game part 2 you should guess a number from 1-10, \n Enter a number from 1-10 please ');
   for(let i = 0; i < 3; i++){
@@ -214,7 +196,6 @@ guessNumber();
 alert('Thanks for you '+ userName +' the correct answer is 5  ');
 
 let guessArray = ['canada','greece','italy','spain','turkey'];
-// let userGuessCon = prompt('Hello, Now you should guess one of these countries \n two of them are correct from these list, \n Please enter one of these list, one is correct \n turkey, italy, spain, canada, greece ').toLowerCase();
 function guessCountry(){
   let c = 0;
   while (c<6){
