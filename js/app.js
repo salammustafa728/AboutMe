@@ -80,7 +80,7 @@ funcMajour(ques2);
 
 function funcExperience(ques3)
 {
-  ques3 = prompt('Do I have an experience in programming? Yes/No').toLowerCase();
+  ques3 = prompt('Do you think I have any years of programming experience? Yes/No').toLowerCase();
   alert('your answer is: '+ ques3);
   if(ques3 === 'no' || ques3 === 'n'){
     scoreCount = scoreCount + 0;
@@ -89,7 +89,7 @@ function funcExperience(ques3)
     scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
   }else{
-    ques3 = prompt('you should write y/n or yes/no \n Do I have an experience in programming? Yes/No').toLowerCase();
+    ques3 = prompt('you should write y/n or yes/no \n Do you think I have any years of programming experience? Yes/No').toLowerCase();
     if(ques3 === 'no' || ques3 === 'n'){
       scoreCount = scoreCount + 0;
       alert('Great, Your answer is correct ');
