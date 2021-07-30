@@ -2,7 +2,7 @@
 
 
 alert('Hello to Salam Mustafa page');
-let scoreCount = 7;
+let scoreCount = 0;
 
 let userName = prompt('Enter your name please').toLowerCase();
 alert('Hello '+ userName);
@@ -28,18 +28,18 @@ function funcStudy(ques1)
   alert('your answer is: '+ques1);
 
   if(ques1 === 'yes' || ques1 === 'y'){
-    scoreCount = scoreCount + 0;
+    scoreCount ++;
     alert('Great, Your answer is correct ');
   }else if(ques1==='no' || ques1 ==='n'){
-    scoreCount = scoreCount - 1;
+
     alert('ohhh, Unfortunately, incrroct answer');
   }else{
     ques1 = prompt('you should write y/n or yes/no \n Did I study in Al-hussien Bin Talal university? Yes/No').toLowerCase();
     if(ques1 === 'yes' || ques1 === 'y'){
-      scoreCount = scoreCount + 0;
+      scoreCount ++;
       alert('Great, Your answer is correct ');
     }else if(ques1==='no' || ques1 ==='n'){
-      scoreCount = scoreCount - 1;
+
       alert('ohhh, Unfortunately, incrroct answer');
     }
   }
@@ -57,19 +57,19 @@ function funcMajour(ques2)
   alert('your answer is: '+ques2);
 
   if(ques2 === 'yes' || ques2 === 'y'){
-    scoreCount = scoreCount + 0;
+    scoreCount ++;
     alert('Great, Your answer is correct ');
   }else if(ques2==='no' || ques2 === 'n'){
     alert('ohhh, Unfortunately, incrroct answer');
-    scoreCount = scoreCount - 1;
+
   }else{
     ques2 = prompt('you should write y/n or yes/no \n Did I studied computer science? Yes/No').toLowerCase();
     if(ques2 === 'yes' || ques2 === 'y'){
-      scoreCount = scoreCount + 0;
+      scoreCount ++;
       alert('Great, Your answer is correct ');
     }else if(ques2==='no' || ques2 === 'n'){
       alert('ohhh, Unfortunately, incrroct answer');
-      scoreCount = scoreCount - 1;
+
     }
   }
 }
@@ -80,21 +80,19 @@ funcMajour(ques2);
 
 function funcExperience(ques3)
 {
-  ques3 = prompt('Do you think I have any years of programming experience? Yes/No').toLowerCase();
+  ques3 = prompt('Do you think I like pets? Yes/No').toLowerCase();
   alert('your answer is: '+ ques3);
   if(ques3 === 'no' || ques3 === 'n'){
-    scoreCount = scoreCount + 0;
+    scoreCount ++;
     alert('Great, Your answer is correct ');
   }else if(ques3 === 'yes'|| ques3 === 'y'){
-    scoreCount = scoreCount - 1;
     alert('ohhh, Unfortunately, incrroct answer');
   }else{
-    ques3 = prompt('you should write y/n or yes/no \n Do you think I have any years of programming experience? Yes/No').toLowerCase();
+    ques3 = prompt('you should write y/n or yes/no \n Do you think I like pets? Yes/No').toLowerCase();
     if(ques3 === 'no' || ques3 === 'n'){
-      scoreCount = scoreCount + 0;
+      scoreCount ++;
       alert('Great, Your answer is correct ');
     }else if(ques3 === 'yes'|| ques3 === 'y'){
-      scoreCount = scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
     }
   }
@@ -105,21 +103,21 @@ funcExperience(ques3);
 
 function funcAge(ques4){
 
-  ques4 = prompt('Am I 24 years old? Yes/No').toLowerCase();
+  ques4 = prompt('Am I likes travel? Yes/No').toLowerCase();
   alert('your answer is: '+ ques4 );
   if(ques4 === 'yes' || ques4 === 'y'){
-    scoreCount = scoreCount + 0;
+    scoreCount ++;
     alert('Great, Your answer is correct ');
   }else if(ques4 === 'no' || ques4 === 'n' ){
-    scoreCount = scoreCount - 1;
+
     alert('ohhh, Unfortunately, incrroct answer');
   }else{
-    ques4 = prompt('you should write y/n or yes/no \n Am I 24 years old? Yes/No').toLowerCase();
+    ques4 = prompt('you should write y/n or yes/no \n Am I likes travel? Yes/No').toLowerCase();
     if(ques4 === 'yes' || ques4 === 'y'){
-      scoreCount = scoreCount + 0;
+      scoreCount + 0;
       alert('Great, Your answer is correct ');
     }else if(ques4 === 'no' || ques4 === 'n' ){
-      scoreCount = scoreCount - 1;
+      scoreCount - 1;
       alert('ohhh, Unfortunately, incrroct answer');
     }
   }
@@ -129,21 +127,21 @@ funcAge(ques4);
 
 function funcTrain(ques5)
 {
-  ques5 = prompt('Am I a trainee for ASAC? Yes/No').toLowerCase();
+  ques5 = prompt('Do I love movies? Yes/No').toLowerCase();
   alert('your answer is: '+ ques5 );
   if(ques5 === 'yes' || ques5 === 'y'){
-    scoreCount = scoreCount + 0;
+    scoreCount ++;
     alert('Great, Your answer is correct ');
   }else if(ques5 === 'no' || ques5 === 'n'){
-    scoreCount = scoreCount - 1;
+
     alert('ohhh, Unfortunately, incrroct answer');
   }else{
-    ques5 = prompt('you should write y/n or yes/no \n  Am I a trainee for ASAC? Yes/No').toLowerCase();
+    ques5 = prompt('you should write y/n or yes/no \n  Do I love movies? Yes/No').toLowerCase();
     if(ques5 === 'yes' || ques5 === 'y'){
-      scoreCount = scoreCount + 0;
+      scoreCount ++;
       alert('Great, Your answer is correct ');
     }else if(ques5 === 'no' || ques5 === 'n'){
-      scoreCount = scoreCount - 1;
+
       alert('ohhh, Unfortunately, incrroct answer');
     }
   }
@@ -163,10 +161,10 @@ function guessNumber(){
   let userGuess = prompt('Hello to guessing game part 2 you should guess a number from 1-10, \n Enter a number from 1-10 please ');
   for(let i = 0; i < 3; i++){
     if(userGuess === guessingNum){
-      scoreCount--;
+      // scoreCount--;
       alert('Congrats correct answer');
       console.log(userGuess);
-      scoreCount = scoreCount + 0;
+      scoreCount ++;
       if(userGuess === guessingNum){
         break;
       }
